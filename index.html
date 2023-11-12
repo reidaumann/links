@@ -3,12 +3,82 @@
 <head>
   <title>Reid's Links</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="style.css">
+  <style>
+    body{
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+
+    .banner-image{
+      width: 128px;
+      height: 128px;
+      object-fit: cover;
+      border-radius: 128px;
+      border: solid;
+      border-color: white;
+    }
+
+    .thumbnail{
+      width: 48px;
+      height: 48px;
+      border-radius: 48px;
+      object-fit: cover;
+    }
+
+    body{
+      background-color: #004643;
+      display: flex;
+      justify-content: center;
+    }
+
+    .name{
+      color: #fffffe;
+      display: flex;
+      justify-content: center;
+    }
+
+    .banner{
+      display: flex;
+      justify-content: center;
+    }
+
+    .social-icons{
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .social-icons a{
+      color: #f25f4c;
+      text-decoration: none;
+    }
+
+    .link{
+      background-color: #ff8906;
+      display:flex;
+      align-items: center;
+      padding: 5px;
+    }
+
+    .link a{
+      color: white;
+      text-decoration: none;
+      text-align: center;
+      flex-grow: 1;
+    }
+
+    .items{
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      max-width: 640px;
+      flex-grow: 1;
+    }
+  </style>
 </head>
 
-<body>
+<body> <div class="items">
   <div class="banner">
-    <img src="reidprofile.jpg" alt="Reid Aumann headshot">
+    <img src="reidprofile.jpg" alt="Reid Aumann headshot" class="banner-image">
   </div>
 
   <div class="name">
@@ -27,13 +97,13 @@
 
   <div class="link">
     <img
-      src="fastfashion.jpg">
+      src="fastfashion.jpg" class="thumbnail">
 
     <a target="_blank" href="https://psci.princeton.edu/tips/2020/7/20/the-impact-of-fast-fashion-on-the-environment"> The Impact of Fast Fashion</a>
   </div>
 
   <div class="link">
-    <img src="knitting.jpg">
+    <img src="knitting.jpg" class="thumbnail">
 
     <a target="_blank"
       href="https://www.huffpost.com/entry/learn-to-knit_b_7146404"> Why You Should Learn to Knit </a>
@@ -41,11 +111,11 @@
 
   <div class="link">
     <img
-      src="trans.jpg">
+      src="trans.jpg" class="thumbnail">
 
-    <a target="_blank" href="https://www.lesliefeinberg.net/self/">A
+    <a target="_blank" href="https://www.lesliefeinberg.net/self/">
       Leslie Feinberg - Writer and Organizer</a>
   </div>
 
-</body>
+</body> </div>
 </html>
